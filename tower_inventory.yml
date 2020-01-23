@@ -10,3 +10,9 @@
          description: "Testing tower_inventory module"
          organization: "Default"
          state: present
+     - name: Create Host
+       tower_host:
+         inventory: "patrick_tower_inv1"
+         name: "host001" 
+         tower_verify_ssl: no
+       register: fs_host
